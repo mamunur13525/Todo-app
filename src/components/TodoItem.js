@@ -11,18 +11,18 @@ const TodoItem = ({ todo }) => {
     return (
         <div>
         
-            <div style={{border:'1px solid #0000004f',paddingTop:'15px'}} className="row text-center d-flex justify-content-between px-5 ">
-              {/* <div>#{todo.id.length >1?todo.id[2] :todo.id }</div> */}
+            <div style={{borderTop:'1px solid #0000004f',borderBottom:'1px solid #0000004f',    margin: '0px 10px'}} className="row text-center d-flex justify-content-between px-3 ">
+
     
-                <div className="d-flex">
-                <div className="font-weight-bold mt-2 mr-1">*</div>
+                <div className="d-flex  mt-3">
+                <div className="font-weight-bold mt-1 mr-1">*</div>
                     {editable ? <input type = 'text'
                      className="form-control"
                      onChange={
                          (e) => setName(e.target.value)
                      }
                      defaultValue={name}
-                      /> : <h4>{todo.name}</h4>}
+                      /> : <h5>{todo.name}</h5>}
                   
                     </div>
                <div>
