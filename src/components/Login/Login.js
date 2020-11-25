@@ -5,7 +5,7 @@ import google_img from '../../images/google_logo.png';
 import firebaseConfig from './firebaseConfig';
 import { firebase } from '@firebase/app';
 import { useHistory, useLocation } from 'react-router-dom';
-
+import logo from '../../images/logo.PNG';
 
 
 
@@ -51,9 +51,11 @@ const Login = () => {
 
     return (
         <div className="text-center">
-            
+     
                 <div className="loginBox">
-                    <h3>Login With</h3>
+                <img style={{width:'60px', marginBottom:'20px'}} src={logo} alt=""/>
+                <h3>My Todo-app </h3>       
+                    <h4>Login With</h4>
                     <div onClick={googleSingUp}  className="continue_google_box">
                         <img className="google_logo" src={google_img} alt=""/>
                         <span>Continue With Google</span>
